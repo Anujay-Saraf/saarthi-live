@@ -85,14 +85,14 @@ backend/
 Install JavaScript dependencies:
 
 ```powershell
-cd C:\Users\anuja_9ipoxfr\Downloads\Projects\testvoice-agent
+cd project\path
 npm install
 ```
 
 Prepare backend:
 
 ```powershell
-cd C:\Users\anuja_9ipoxfr\Downloads\Projects\testvoice-agent\backend
+cd project\path
 python -m venv .venv
 .venv\Scripts\pip.exe install -r requirements.txt
 copy .env.example .env
@@ -114,7 +114,7 @@ SARVAM_TTS_SPEAKER=anand
 From repo root:
 
 ```powershell
-cd C:\Users\anuja_9ipoxfr\Downloads\Projects\testvoice-agent
+cd project\path
 npm run backend:token
 ```
 
@@ -127,7 +127,7 @@ Invoke-RestMethod http://127.0.0.1:8787/health
 ## Run Web App
 
 ```powershell
-cd C:\Users\anuja_9ipoxfr\Downloads\Projects\testvoice-agent
+cd project\path
 npx expo start --web --port 8084 -c
 ```
 
@@ -146,7 +146,7 @@ http://localhost:8787
 ## Run Mobile App In Expo Go
 
 ```powershell
-cd C:\Users\anuja_9ipoxfr\Downloads\Projects\testvoice-agent
+cd project\path
 npx expo start --host lan --port 8083 -c
 ```
 
