@@ -6,6 +6,7 @@ node_modules/
 # Expo
 .expo/
 dist/
+dist-web/
 web-build/
 expo-env.d.ts
 
@@ -25,17 +26,37 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+*.err.log
 
 # macOS
 .DS_Store
 *.pem
 
 # local env files
+.env
+.env.*
+!.env.example
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
+# Python
+.venv/
+__pycache__/
+*.pyc
+
 # generated native folders
 /ios
 /android
+
+# build artifacts and local archives
+*.apk
+*.aab
+appendix/build-artifacts/
+appendix/run-logs/
+appendix/generated-doc-assets/
+appendix/rejected-assets/
+appendix/original-assets/
+appendix/last-eas-build*

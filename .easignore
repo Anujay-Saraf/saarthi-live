@@ -1,0 +1,32 @@
+# Dependencies and local tooling
+node_modules/
+.expo/
+.git/
+
+# Backend is run separately and must not be bundled into the mobile app upload.
+backend/
+
+# Local/generated outputs
+appendix/
+dist/
+dist-web/
+web-build/
+*.log
+*.err.log
+*.apk
+*.aab
+
+# Local env and credentials
+.env
+.env.*
+!.env.example
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# OS/editor noise
+.DS_Store
+*.tsbuildinfo

@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+livekit-api
+livekit-agents[sarvam]
+pypdf
+python-docx
+langgraph

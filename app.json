@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "testvoice-agent",
-    "slug": "testvoice-agent",
+    "name": "Saarthi Live",
+    "slug": "saarthi-live",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,15 +16,29 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.saarthilive.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5546bacd-8bdf-4aa4-91b0-556df10fff4d"
+      }
+    },
+    "owner": "anujay-saraf"
   }
 }
